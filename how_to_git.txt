@@ -1,0 +1,8 @@
+add changes with:
+	git add <file>
+
+add all new changes with:
+	git add .
+
+push to github with:
+	git push -u origin main
