@@ -1,8 +1,21 @@
-add changes with:
+add changes:
 	git add <file>
 
-add all new changes with:
+add all new changes:
 	git add .
 
-push to github with:
+make a new commit:
+	git commit -m "<commit>"
+
+merge a branch:
+	git branch -M <branch>
+
+look at the log:
+	git log
+
+go (back?) to commit:
+	git checkout <checkout_hash>
+
+push to github (or idk):
 	git push -u origin main
+
