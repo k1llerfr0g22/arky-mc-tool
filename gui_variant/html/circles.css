@@ -1,0 +1,92 @@
+.circle1,
+.circle2
+{
+	background: white;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 100, 100, 0.9),
+	  rgba(255, 100, 100, 0.3));
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	z-index: 2;
+	border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.circle1
+{
+	top: 5%;
+	right: 15%;
+}
+
+.circle2
+{
+	bottom: 5%;
+	left: 15%
+}
+
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7,
+.circle8
+{
+	background: white;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 100 ,100, 0.9),
+		rgba(255, 100, 100, 0.3));
+	position: absolute;
+	z-index: 2;
+	border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.circle3
+{
+  bottom: 50%;
+  left: 23%;
+  height: 50px;
+	width: 50px;
+}
+
+.circle4
+{
+	height: 120px;
+	width: 120px;
+  top: 65%;
+  left: 30%;
+}
+
+.circle5
+{
+	height: 50px;
+	width: 50px;
+  top: 15%;
+  right: 43%;
+}
+
+.circle6
+{
+	height: 90px;
+	width: 90px;
+  bottom: 35%;
+  right: 40%;
+}
+
+.circle7
+{
+	height: 10px;
+  bottom: 10%;
+  right: 10%;
+}
+
+.circle8
+{
+	height: 100px;
+	width: 100px;
+  top: 10%;
+  left: 10%;
+}
