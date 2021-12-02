@@ -46,6 +46,7 @@ def loading(loading_step):
 
 
 
+
 def start_server_2g():
 	print("starting")#os.system("cd /home/k1llerfr0g/code/server/minecraft/aternos && java " + str(two) + " -jar minecraft_server1.17.1.jar")
 
