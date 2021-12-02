@@ -1,6 +1,8 @@
+#!/usr/bin/python
 import eel
 import threading
 import os
+import time
 
 #### VARS:      ####
 # VARS FOR RAM AMOUNT ARG 	
@@ -11,13 +13,14 @@ start_server_bool = True
 
 
 # START MSG:
-print("starting...")
+print("starting")
 
 
 #### FUNCTIONS: ####
 @eel.expose
 def python_suicide_quit():
 	system("killall python3")
+
 
 
 #def start_server_from_js(): (idk why this is here but maybe ill need this reminder later...)
@@ -36,9 +39,15 @@ def python_suicide_quit():
 		os.system("cd /home/k1llerfr0g/code/server/minecraft/aternos && java " + str(two) + " -jar minecraft_server1.17.1.jar")
 		print("start_server worked")"""
 
+def loading(loading_step):
+	if loading_step == 1:
+		print("   loading " + "|" + u'\u2588' +  u'\u2593' + u'\u2592' + u'\u2591');
+
+
+
+
 def start_server_2g():
 	print("starting")#os.system("cd /home/k1llerfr0g/code/server/minecraft/aternos && java " + str(two) + " -jar minecraft_server1.17.1.jar")
-
 
 def start_server_4g():
 	os.system("cd /home/k1llerfr0g/code/server/minecraft/aternos && java " + str(four) + " -jar minecraft_server1.17.1.jar")
@@ -50,6 +59,12 @@ def start_server_6g():
 def start_html():
 	eel.init("html")
 	eel.start("home.html", cmdline_args=['--kiosk'])
+
+
+while True:
+	loading(1)
+	loading(2)
+
 
 #### THREADS:   ####
 
