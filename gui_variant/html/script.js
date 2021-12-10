@@ -11,3 +11,8 @@ function quit_js()
   eel.expose(quit)
   eel.exit()
 }
+
+function start_server_2g()
+{
+  eel.sts2g_thread()
+}
