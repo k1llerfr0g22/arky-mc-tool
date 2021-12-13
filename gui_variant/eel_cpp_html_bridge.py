@@ -26,7 +26,7 @@ def hello_world():
 
 
 #def start_server_from_js(): (idk why this is here but maybe ill need this reminder later...)
-
+	 
 """def start_server():
 	global ram
 	if ram == 6:
