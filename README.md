@@ -1,4 +1,4 @@
 # ARKY-MC-TOOL
 
-The mc-server-tool is a tool to manage minecraft servers
+The Arky-mc-tool is a tool to manage minecraft servers
 with a html-build gui, the tool is mostly programmed in c++
