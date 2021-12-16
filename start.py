@@ -1,6 +1,45 @@
 import os
 import keyboard
 import time
+import importlib.util
+import sys
+
+
+os.system("clear")
+
+# THIS IS FROM STACKOVERFLOW AGAIN LOL:
+
+package_needed = "pip"
+
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# THIS SHIT DOESNT WORKS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+print("checking depencies")
+time.sleep(2)
+if package_needed in sys.modules:
+    print(f"{package_needed!r} already in sys.modules")
+    time.sleep(2)
+elif (spec := importlib.util.find_spec(package_needed)) is not None:
+    # If you choose to perform the actual import ...
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[package_needed] = module
+    spec.loader.exec_module(module)
+    print("all depencies are installed!")
+    #print(f"{package_needed!r} has been imported")
+    time.sleep(2)
+
+else:
+    print(f"can't find the {package_needed!r} module")
+    time.sleep(1)
+    print("installing" + package_needed)
+    os.system("pip install eel")
+    time.sleep(1)
+    print("installed " + package_needed)
+
 
 choice = 0
 
@@ -52,7 +91,10 @@ while True:  # MAINLOOP
             exit()
 
         if choice == 1:
-            os.system("sudo python3 credits.py")
+            os.system("cd data && python3 start_cmd_line_variant.py")
+
+        if choice == 0:
+            os.system("cd data/gui_variant && python3 eel_cpp_html_bridge.py")
 
 
 
