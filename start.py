@@ -18,7 +18,7 @@ package_needed = "pip"
 
 
 
-print("checking depencies")
+"""print("checking depencies")
 time.sleep(2)
 if package_needed in sys.modules:
     print(f"{package_needed!r} already in sys.modules")
@@ -38,7 +38,7 @@ else:
     print("installing" + package_needed)
     os.system("pip install eel")
     time.sleep(1)
-    print("installed " + package_needed)
+    print("installed " + package_needed)"""
 
 
 choice = 0
